@@ -1,0 +1,33 @@
+html, body {
+  margin: 0px !important;
+  position: relative;
+}
+
+.nav-bar {
+  position: absolute;
+  width: 100%;
+  padding-top: 15px;
+  height: 120px;
+  background-color: rgba(0,0,0,0.5);
+  .nav-logo {
+    margin-left: 25px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    .crossroadslogo {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .nav-links {
+    float: right;
+    div {
+      display: inline-block;
+      padding-right: 25px;
+    }
+  }
+}
+
+.carousel {
+  width: 90vh;
+}
