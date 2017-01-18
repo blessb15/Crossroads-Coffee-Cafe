@@ -1,18 +1,34 @@
 html, body {
   margin: 0px !important;
   position: relative;
+  color: #f4f4f4 !important;
+}
+
+@font-face {
+  src: url('../fonts/Quicksand-Medium.ttf');
+  font-family: QS;
 }
 
 .nav-bar {
+  font-family: QS;
   position: absolute;
   width: 100%;
   padding-top: 15px;
-  height: 120px;
-  background-color: rgba(0,0,0,0.5);
+  height: 45vh;
+  background:
+  linear-gradient(
+  rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)
+  ),
+  url("../img/bulb.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
   .nav-logo {
     margin-left: 25px;
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     float: left;
     .crossroadslogo {
       width: 100%;
@@ -21,10 +37,33 @@ html, body {
   }
   .nav-links {
     float: right;
+    cursor: pointer;
+    font-size: 20px;
     div {
       display: inline-block;
-      padding-right: 25px;
+      padding-right: 45px;
     }
+    .nav-contact {
+      padding-right: 25px !important;
+    }
+  }
+  .reviews {
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    position: absolute;
+    z-index: 2;
+    top: 46%;
+  }
+  div .active-rev {
+    display: block !important;
+  }
+  div .review-quote {
+    display: none;
+  }
+  .review-quote {
+    margin-left: 45px;
+    margin-right: 45px;
   }
 }
 

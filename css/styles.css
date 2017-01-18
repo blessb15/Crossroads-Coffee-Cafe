@@ -1,26 +1,52 @@
 html, body {
   margin: 0px !important;
-  position: relative; }
+  position: relative;
+  color: #f4f4f4 !important; }
 
+@font-face {
+  src: url("../fonts/Quicksand-Medium.ttf");
+  font-family: QS; }
 .nav-bar {
+  font-family: QS;
   position: absolute;
   width: 100%;
   padding-top: 15px;
-  height: 120px;
-  background-color: rgba(0, 0, 0, 0.5); }
+  height: 45vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bulb.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%; }
   .nav-bar .nav-logo {
     margin-left: 25px;
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     float: left; }
     .nav-bar .nav-logo .crossroadslogo {
       width: 100%;
       height: 100%; }
   .nav-bar .nav-links {
-    float: right; }
+    float: right;
+    cursor: pointer;
+    font-size: 20px; }
     .nav-bar .nav-links div {
       display: inline-block;
-      padding-right: 25px; }
+      padding-right: 45px; }
+    .nav-bar .nav-links .nav-contact {
+      padding-right: 25px !important; }
+  .nav-bar .reviews {
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    position: absolute;
+    z-index: 2;
+    top: 46%; }
+  .nav-bar div .active-rev {
+    display: block !important; }
+  .nav-bar div .review-quote {
+    display: none; }
+  .nav-bar .review-quote {
+    margin-left: 45px;
+    margin-right: 45px; }
 
 .carousel {
   width: 90vh; }
